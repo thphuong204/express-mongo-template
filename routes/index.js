@@ -21,4 +21,7 @@ router.get("/template/:test", async(req,res,next)=>{
   }
 })
 
+const fooRouter = require("./foo.api.js")
+router.use("/foo",fooRouter)
+
 module.exports = router;

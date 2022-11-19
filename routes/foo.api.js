@@ -31,8 +31,5 @@ const {createFoo, getAllFoos, updateFooById ,deleteFooById} = require("../contro
  */
  router.delete("/:id",deleteFooById)
 
- const fooRouter = require("./foo.api.js")
-    router.use("/foo",fooRouter)
-
  //export
- module.exports= router
+ module.exports = router
